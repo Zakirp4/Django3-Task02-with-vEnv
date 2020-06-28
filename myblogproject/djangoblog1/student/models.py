@@ -6,3 +6,6 @@ class StudentList(models.Model):
     roll = models.IntegerField()
     gender = models.CharField(max_length=6)
 
+    def __str__(self):
+        return self.name
+
