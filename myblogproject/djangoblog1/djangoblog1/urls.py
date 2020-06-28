@@ -22,5 +22,6 @@ urlpatterns = [
     path('hello', HelloWorld),
     path('home', home),
     path('student/', include('student.urls')),
+    path('blog/', include('blog.urls')),
 
 ]
