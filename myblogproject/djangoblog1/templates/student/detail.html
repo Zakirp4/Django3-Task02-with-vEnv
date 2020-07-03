@@ -11,9 +11,9 @@
     <title>Home!</title>
 </head>
 <body>
-<button type="button" class="btn btn-secondary"><a href="http://127.0.0.1:8000/home">Home!</a></button>
-<button type="button" class="btn btn-secondary"><a href="http://127.0.0.1:8000/blog">Blog!</a></button>
-<button type="button" class="btn btn-secondary"><a href="http://127.0.0.1:8000/contact">Contact!</a></button>
+  <button type="button" class="btn btn-secondary"><a href="{% url 'post-list' %}">PostList</a></button>
+  <button type="but ton" class="btn btn-secondary"><a href="{% url 'student-list' %}">StudentList</a></button>
+  <button type="button" class="btn btn-secondary"><a href="{% url 'district-list' %}">DistrictList</a></button>
 
 
 <div class="col-md-12">

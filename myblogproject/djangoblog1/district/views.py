@@ -12,7 +12,7 @@ def district_list(request):
 def district_detail(request, district_id):
     district = District.objects.get(id=district_id)
     context = {
-        'post': district
+        'district': district
     }
     return render(request, 'district/district_detail.html', context)
 

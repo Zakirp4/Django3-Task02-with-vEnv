@@ -5,6 +5,6 @@ from . views import *
 
 urlpatterns = [
 
-    path('detail/<int:id>',district_detail, name='district-detail'),
-    path('list',district_list, name='district-list'),
+    path('detail/<int:district_id>',district_detail, name='district_detail'),
+    path('list',district_list, name='district_list'),
 ]

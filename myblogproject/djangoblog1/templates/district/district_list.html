@@ -1,0 +1,16 @@
+{% extends 'district/base.html' %}
+
+
+
+{% block content %}
+
+    <h1>This is District Address Page</h1>
+    {% for district in district_list %}
+    <h1><a href="{% url 'district_detail' district.id %}">{{district.name}}</a> </h1>
+    <h3>Description: {{district.description}}</h3>
+    <h3>Number Of Thana: {{district.numberofthana}}</h3>
+    <h3>Thana Name: {{district.thananame}}</h3>
+    {% endfor %}
+
+{% endblock %}
+

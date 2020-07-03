@@ -1,0 +1,14 @@
+{% extends 'district/base.html' %}
+
+
+{% block content %}
+<h1>This is District details</h1>
+<h2>{{district.name}}</h2>
+<p>{{district.description}}</p>
+<hr>
+
+<h3>Number Of Thana: {{district.numberofthana}}</h3>
+<h3>Thana Name: {{district.thananame}}</h3>
+<h3>Created At: {{district.created_at}}</h3>
+
+{% endblock %}
